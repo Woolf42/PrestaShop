@@ -1,0 +1,81 @@
+div.block #mao_blockcategories {
+	padding: 0;
+}
+
+ul.maomenu-vertical,
+ul.maomenu-vertical li,
+ul.maomenu-vertical ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+ul.maomenu-vertical {
+   width: 191px;
+   z-index: 90;
+   position: inherit;
+}
+
+ul.maomenu-vertical a {
+	display: block;
+	overflow: auto;
+}
+
+ul.maomenu-vertical a:first-letter {
+	font-size: 120%;
+}
+
+ul.maomenu-vertical li {
+   position: relative;
+   vertical-align: middle;
+}
+
+ul.maomenu-vertical li.last {
+	margin-bottom: 0;
+}
+
+ul.maomenu-vertical li.hover,
+ul.maomenu-vertical li:hover {
+   z-index: 91;
+   cursor: default;
+   position: relative;
+	visibility:	inherit; /* fixes IE7 'sticky bug' */
+}
+
+ul.maomenu-vertical ul {
+   visibility: hidden;
+   position: absolute;
+   top: 5px;
+   left: 98%;
+	box-shadow: 3px 3px 3px #999999;
+	-moz-box-shadow: 3px 3px 3px #999999;
+	-webkit-box-shadow: 3px 3px 3px #999999;
+}
+
+ul.maomenu-vertical ul li {
+   float: none;
+   font-weight: normal;
+	border-right: none;
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   margin-bottom: 0;
+}
+
+ul.maomenu-vertical ul ul {
+   top: 5px;
+   left: 98%;
+}
+
+ul.maomenu-vertical li:hover > ul {
+   visibility: visible;
+}
+
+/* ######### Prestashop setting  ######### */
+
+#left_column {
+	overflow: visible;
+}

@@ -1,0 +1,113 @@
+div.block #mao_blockcategories {
+	padding: 0 3px 0 3px;
+}
+
+.ddsmoothmenu-v {
+	padding: 5px 0 0;	
+}
+
+.ddsmoothmenu-v ul {
+	margin: 0;
+	padding: 0;
+	width: 100%; /* Main Menu Item widths */
+	list-style-type: none;
+	font-size: 12px;
+}
+
+.ddsmoothmenu-v a:first-letter {
+	font-size: 120%;
+}
+
+.ddsmoothmenu-v ul li {
+	position: relative;
+}
+
+/* Top level menu links style */
+.ddsmoothmenu-v ul li a {
+	display: block;
+	overflow: auto; /*force hasLayout in IE7 */
+	color: #4E2300;
+	text-decoration: none;
+	padding: 6px;
+   border-radius: 5px;
+   -moz-border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-box-shadow: 0 1px 3px #999;
+   -webkit-box-shadow: 0 1px 3px #999;
+   box-shadow: 0 1px 3px #999;
+   text-shadow: 0 0.4px 0.4px #222;
+}
+
+/*Sub level menu items */
+.ddsmoothmenu-v ul li ul {
+	position: absolute;
+	width: 170px; /*Sub Menu Items width */
+	top: 0;
+	font-weight: normal;
+	visibility: hidden;
+	margin: 10px 0 0 -5px;
+}
+
+.ddsmoothmenu-v ul li ul li {
+	padding: 0;
+}
+
+.ddsmoothmenu-v ul li ul li a {
+	border-bottom: 1px solid #dbbaa7;
+   border-radius: 0;
+   -moz-border-radius: 0;
+   -webkit-border-radius: 0;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+.ddsmoothmenu-v ul li ul li.last a {
+   border-bottom: 0;
+}
+ 
+/* Holly Hack for IE \*/
+* html .ddsmoothmenu-v ul li { float: left; height: 1%; }
+* html .ddsmoothmenu-v ul li a { height: 1%; }
+/* End */
+
+/* ######### CSS classes applied to down and right arrow images  ######### */
+
+.downarrowclass {
+	position: absolute;
+	top: 12px;
+	right: 7px;
+}
+
+.rightarrowclass {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+li li .rightarrowclass {
+	position: absolute;
+	top: 11px;
+	right: 12px;
+}
+
+/* ######### CSS for shadow added to sub menus  ######### */
+
+.ddshadow { /*shadow for NON CSS3 capable browsers*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 0;
+	background: none;
+}
+
+.toplevelshadow { /*shadow opacity for NON CSS3 capable browsers. Doesn't work in IE*/
+	opacity: 0.8;
+}
+
+/* ######### Prestashop setting  ######### */
+
+#left_column {
+	overflow: visible;
+}

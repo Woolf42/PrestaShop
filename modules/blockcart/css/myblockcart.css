@@ -1,0 +1,7 @@
+#cart_block_list div.quantity_buttons {
+	width: 10%;
+	float: left;
+	margin-left: 2px
+}
+
+#cart_block_list span.quantity-formated { margin-left:1px }

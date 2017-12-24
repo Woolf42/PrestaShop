@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>promotions</name>
+	<displayName>Produits en promotions</displayName>
+	<version>0.9</version>
+	<description>Produits en promotions sur la page d\'acceuil</description>
+	<author></author>
+	<tab>Tools</tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
